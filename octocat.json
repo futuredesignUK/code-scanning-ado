@@ -1,0 +1,22 @@
+[
+    {
+        "image": "Octocat-Florence.png",
+        "title": "FlorencetoCat",
+        "text": "Loves pink!"
+    },
+    {
+        "image": "Octocat-Violet.png",
+        "title": "ViolettoCat",
+        "text": "Loves purple!"
+    },
+    {
+        "image": "daftpunktocat-thomas.gif",
+        "title": "DaftPunktoCat",
+        "text": "Loves music!"
+    },
+    {
+        "image": "boxertocat_octodex.jpg",
+        "title": "BoxertoCat",
+        "text": "Loves a punch up!"
+    }
+]

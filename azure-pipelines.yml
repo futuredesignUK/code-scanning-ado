@@ -1,0 +1,50 @@
+# This Azure pipelines uses a PowerShell task to run CodeQL on the agent/runner and send results back to GitHub.
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs: 
+# install Node
+- job: NodeJS
+  displayName: Node JS
+  steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '10.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+     npm install
+    displayName: 'npm install and test'
+
+# Run CodeQL
+- job: CodeQL_CLI 
+  displayName: CodeQL Scan
+  # specify private agent pool https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pool?view=azure-pipelines 
+  # pool:  // using MS hosted instead of self-hosted/private agent
+  # name: Default
+  # Use PowerShell to checkout CodeQL Anywhere repo as a sub module
+  steps:
+  - task: PowerShell@2
+    displayName: 'Checkout codeql-anywhere'
+    inputs:
+      targetType: inline
+      script: |
+        if (Test-Path './.git/modules/codeql-anywhere') {rm -rf './.git/modules/codeql-anywhere'}
+        git submodule add https://github.com/david-wiggs/codeql-anywhere.git
+      pwsh: true
+  # Use PowerShell to run the CodeQL scan and return SARIF results to GitHub
+  - task: PowerShell@2
+    displayName: 'Run New-CodeQLScan.ps1'
+    inputs:
+      targetType: filePath
+      filePath: 'codeql-anywhere/resources/scripts/New-CodeQLScan.ps1'
+      pwsh: true
+    env:
+      # GITHUB_TOKEN environment variable must be set to pass in the secret value defined in the $(GHAS_ADO) ADO pipeline variable.
+      # Use an access token or a GitHub App with the full repo & security_events permissions as it tries to detect the repo languages via the API
+      # https://docs.github.com/en/code-security/code-scanning/using-codeql-code-scanning-with-your-existing-ci-system/installing-codeql-cli-in-your-ci-system#generating-a-token-for-authentication-with-github
+      GITHUB_TOKEN: $(GHAS_ADO)

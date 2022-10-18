@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+	<meta http-equiv="Cache-Control" content="max-age=1209600">
+	<title>DEMO: GitHub & Azure DevOps Code Scanning @futuredesignUK</title>
+	<link rel="stylesheet" href="./css/styles-min.css">
+	<link rel="stylesheet" href="https://use.typekit.net/boi0tlt.css">
+	<!-- from GitHub.com -->
+	<link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+	<link rel="alternate icon" class="js-site-favicon" type="image/png"
+		href="https://github.githubassets.com/favicons/favicon.png">
+	<link rel="icon" class="js-site-favicon" type="image/svg+xml"
+		href="https://github.githubassets.com/favicons/favicon.svg">
+
+</head>
+
+<body>
+
+	<div class="texture">
+		<div class="container">
+			<header class="header--main">
+				<div class="logoWrapper">
+					<div class="logo"><span class="visibility-none">GitHub Logo</span></div>
+					<h1 class="primaryHeading">Welcome to GitHub</h1>
+					<h2 class="secondaryHeading">The complete developer platform to build, scale, and deliver secure
+						software</h2>
+			</header>
+		</div>
+
+
+		<div class="container">
+			<section>
+				<div class="section-header">
+					<h1 class="primaryHeading">Let's build from here, together</h1>
+					<h2 class="secondaryHeading">Meet the Team</h2>
+				</div>
+				<div class="grid">
+					<div class="card-wrapper">
+						<div class="grid">
+							
+						<!-- loop through octocats -->
+						<% for(var i=0; i < octocat.length; i++) { %>
+
+							<div class="card col--half">
+								<!-- Card -->
+								<a href="/">
+									<img src="img/<%= octocat[i].image %>" alt="" />
+									<div class="card-footer">
+										<span class="cardTitle"><%= octocat[i].title %></span>
+										<span class="cardText"><%= octocat[i].text %></span>
+									</div>
+								</a>
+							</div><!-- /Card -->
+						
+						<!-- end loop -->
+						<% } %>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="section-header">
+					<h1 class="primaryHeading">Find out more about GitHub</h1>
+					<h2 class="secondaryHeading">Drive productivity for developers with configurable features that
+						transform workflows and increase collaboration.</h2>
+				</div>
+				<div class="grid grid--no-gutter grid--no-row">
+					<div class="tout  col--half">
+						<!-- Tout -->
+						<img src="img/BobaFett.gif" alt="">
+					</div><!-- /Tout -->
+					<div class="tout tout--indent col--half">
+						<!-- Tout -->
+						<h3 class="toutTitle">Resources to help enterprise teams do their best work</h3>
+						<hr>
+						<p class="toutText">Solutions Engineering are here to help</p>
+						<a href="/" class="button button--standard">Free trial - Let's Do It!</a>
+					</div><!-- /Tout -->
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="grid">
+					<div class="col--half">
+						<span class="smallText reversed">
+							© GitHub, Inc 2022
+						</span>
+					</div>
+					<div class="col--half">
+						<nav>
+							<ul class="footer-menu">
+								<li><a href="/">Terms</a></li>
+								<li><a href="/">Privacy</a></li>
+								<li><a href="/">Site Map</a></li>
+								<li><a href="/">What is Git?</a></li>
+							</ul>
+						</nav>
+					</div>
+		</footer>
+
+	</div><!-- /Container -->
+</body>
+
+</html>
