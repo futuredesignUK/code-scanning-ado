@@ -22,6 +22,10 @@ The ADO pipeline uses the CodeQL API to:
 - Download the latest CodeQL bundle for the detected OS
 - Detect the languages of a given repository to determine which ones are supported by CodeQL
 - Create CodeQL databases, analyze, and upload results back to GitHub for each supported language
+- GitHub security tab shows the alerts as *Worflow: API upload*
+
+![image](https://user-images.githubusercontent.com/19208973/196413583-741b41d2-6b4f-407b-ad92-9fc51505a517.png)
+
 
 ### Credit
 
