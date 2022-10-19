@@ -13,7 +13,7 @@ This repo will show how you can host your code in GitHub and use an Azure DevOps
 
 ### Overview
 
-This repo has Node App which uses an [ADO pipeline](https://dev.azure.com/samhope-evans/code-scanning-ado/) run the CodeQL scan.
+This repo has a simple Node JS App which uses an [ADO pipeline](https://dev.azure.com/samhope-evans/code-scanning-ado/) run the CodeQL scan.
 
 [![Build Status](https://dev.azure.com/samhope-evans/code-scanning-ado/_apis/build/status/futuredesignUK.code-scanning-ado?branchName=main)](https://dev.azure.com/samhope-evans/code-scanning-ado/_build/latest?definitionId=21&branchName=main)
 
