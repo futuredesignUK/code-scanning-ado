@@ -23,6 +23,7 @@ jobs:
 # Run CodeQL
 - job: CodeQL_CLI 
   displayName: CodeQL Scan
+  dependsOn: NodeJS
   # specify private agent pool https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pool?view=azure-pipelines 
   # pool:  // using MS hosted instead of self-hosted/private agent
   # name: Default
