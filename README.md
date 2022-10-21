@@ -2,7 +2,7 @@
 
 ## Use Case
 
-This repo will show how you can host your code in GitHub and use an Azure DevOps (ADO) pipeline to run the CodeQL scans and return the results back to the GitHub interface.
+This repo will show how you can host your code in GitHub and use an Azure DevOps (ADO) pipeline to run the CodeQL scans and return the results back to the GitHub interface. 
 
 ### Requirements
 
