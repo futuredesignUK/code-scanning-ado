@@ -4,6 +4,9 @@
 
 This repo will show how you can host your code in GitHub and use an Azure DevOps (ADO) pipeline to run the CodeQL scans and return the results back to the GitHub interface. 
 
+
+![CodeQL-AzurePipelines](https://user-images.githubusercontent.com/19208973/201435863-291d148a-4548-42fe-be49-d58d7e6397b0.png)
+
 ### Requirements
 
 - GitHub Repo: public or private (needs GitHub Advanced Security enabled)
@@ -25,6 +28,8 @@ The ADO pipeline uses the CodeQL API to:
 - GitHub security tab shows the alerts as *Worflow: API upload*
 
 ![image](https://user-images.githubusercontent.com/19208973/196413583-741b41d2-6b4f-407b-ad92-9fc51505a517.png)
+
+
 
 
 ### Credit
