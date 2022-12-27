@@ -29,8 +29,6 @@ The ADO pipeline uses the CodeQL API to:
 ![image](https://user-images.githubusercontent.com/19208973/196413583-741b41d2-6b4f-407b-ad92-9fc51505a517.png)
 
 
-
-
 ### Credit
 
 Based on this [blog post by Kevin Alwell](https://github.blog/2020-10-27-code-scanning-a-github-repository-using-github-advanced-security-within-an-azure-devops-pipeline/).
