@@ -1,4 +1,4 @@
-# Using Azure Pipelines to run CodeQL on a GitHub repo
+# Code Scanning a GitHub repo using Azure Pipelines
 
 ## Use Case
 
