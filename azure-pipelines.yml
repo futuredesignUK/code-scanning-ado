@@ -27,6 +27,7 @@ jobs:
   # specify private agent pool https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pool?view=azure-pipelines 
   # pool:  // using MS hosted instead of self-hosted/private agent
   # name: Default
+  
   # Use PowerShell to checkout CodeQL Anywhere repo as a sub module
   steps:
   - task: PowerShell@2
@@ -37,6 +38,7 @@ jobs:
         if (Test-Path './.git/modules/codeql-anywhere') {rm -rf './.git/modules/codeql-anywhere'}
         git submodule add https://github.com/david-wiggs/codeql-anywhere.git
       pwsh: true
+      
   # Use PowerShell to run the CodeQL scan and return SARIF results to GitHub
   - task: PowerShell@2
     displayName: 'Run New-CodeQLScan.ps1'
