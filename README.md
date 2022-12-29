@@ -27,7 +27,7 @@ The ADO pipeline uses the CodeQL API to:
 
 #### GitHub security tab - Code Scanning CodeQL Status
 
-This page shows the [current status of CodeQL](https://github.com/futuredesignUK/code-scanning-ado/security/code-scanning/tool-status/CodeQL) and last scan results :point_down
+This page shows the [current status of CodeQL](https://github.com/futuredesignUK/code-scanning-ado/security/code-scanning/tool-status/CodeQL) and last scan results
 
 ![image](https://user-images.githubusercontent.com/19208973/209973064-a862b9e1-2d46-413b-9779-5ef1e868de7d.png)
 
