@@ -9,7 +9,7 @@ This repo will show how you can host your code in GitHub and use an Azure DevOps
 ### Requirements
 
 - GitHub Repo: public or private (needs GitHub Advanced Security enabled)
-- Azure DevOps project: YML pipeline created
+- [Azure DevOps project](https://dev.azure.com/samhope-evans/code-scanning-ado/): YML pipeline created
 - GitHub PaT token: (repo & security events scope) saved as an ADO pipeline variable
 - [Azure Pipelines GitHub app](https://github.com/marketplace/azure-pipelines): to allow ADO access to the GitHub repo
 
