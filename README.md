@@ -25,9 +25,9 @@ The ADO pipeline uses the CodeQL API to:
 - Detect the languages of a given repository to determine which ones are supported by CodeQL
 - Create CodeQL databases, analyze, and upload results back to GitHub for each supported language
 
-#### GitHub security tab - Code Scanning CodeQL Status
+#### GitHub security tab
 
-This page shows the [current status of CodeQL](https://github.com/futuredesignUK/code-scanning-ado/security/code-scanning/tool-status/CodeQL) and last scan results
+In GitHub you can now see the [security scan results](https://github.com/futuredesignUK/code-scanning-ado/security/code-scanning) and also the [current status of CodeQL](https://github.com/futuredesignUK/code-scanning-ado/security/code-scanning/tool-status/CodeQL).
 
 ![image](https://user-images.githubusercontent.com/19208973/209973064-a862b9e1-2d46-413b-9779-5ef1e868de7d.png)
 
