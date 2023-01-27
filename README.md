@@ -2,7 +2,7 @@
 
 ## Use Case
 
-See full blog post: [sam.hope-evans.com/code-scanning-a-github-repo-using-azure-pipelines/](https://sam.hope-evans.com/code-scanning-a-github-repo-using-azure-pipelines/)
+See full walkthrough blog post: [sam.hope-evans.com/code-scanning-a-github-repo-using-azure-pipelines/](https://sam.hope-evans.com/code-scanning-a-github-repo-using-azure-pipelines/)
 
 This repo will show how you can host your code in GitHub and use an Azure DevOps (ADO) pipeline to run [GitHub Advanced Security CodeQL scans](https://github.com/features/security/code) and return the results back to the GitHub interface. 
 
